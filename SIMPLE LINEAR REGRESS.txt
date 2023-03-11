@@ -1,0 +1,15 @@
+define problem statement in simple linear regression ?
+
+In simple linear regression, the problem statement typically involves finding the best-fitting straight line (i.e., the regression line) that describes the linear relationship between two variables, where one variable (the independent variable) is used to predict the values of the other variable (the dependent variable).
+Therefore, the problem statement for simple linear regression involves identifying the equation of the regression line, which can be used to predict the value of the dependent variable for any given value of the independent variable. The aim is to minimize the difference between the predicted values of 
+the dependent variable and the actual observed values, by determining the optimal values of the slope and intercept of the regression line.
+
+
+Define Null Hypothesis?
+
+In simple linear regression, the null hypothesis typically states that there is no significant linear relationship between the predictor variable (X) and the response variable (Y). Mathematically, this can be expressed as:
+H0: β1 = 0
+where β1 is the slope coefficient of the regression line. The null hypothesis assumes that there is no linear relationship between X and Y, meaning that changes in X do not have a significant impact on the value of Y.
+To test the null hypothesis, we can use a t-test to determine whether the estimated slope coefficient is significantly different from zero. If the p-value of the t-test is less than the significance level (usually 0.05), we can reject 
+the null hypothesis and conclude that there is a significant linear relationship between X and Y. If the p-value is greater than the significance level, we fail to reject 
+the null hypothesis and conclude that there is insufficient evidence to suggest a significant linear relationship.

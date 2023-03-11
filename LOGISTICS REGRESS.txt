@@ -1,0 +1,27 @@
+define problem statement in Logistic Regression ?
+
+In logistic regression, the problem statement typically involves predicting the probability of an event occurring based on one or more predictor variables. The event of interest is typically a binary outcome, such as whether a customer will make a purchase or not, whether a patient will develop a disease or not, or whether a loan will be approved or not.
+For example, a problem statement for logistic regression might be:
+"Can we predict whether a customer will purchase a product based on their demographic and behavioral characteristics?"
+In this example, the outcome variable is whether the customer makes a purchase (1) or not (0), and the predictor variables are demographic and behavioral characteristics, such as age, gender, income, and purchase history. The goal of the analysis is to determine which predictor variables are most strongly associated with the outcome variable, and to build a model that can accurately predict
+ the probability of a customer making a purchase based on these characteristics. To solve this problem, we would collect data on customer demographics, purchase history, and other relevant variables for a sample of customers, and then use logistic regression to build a model that relates these variables to the probability of a purchase. The resulting model can then be used to predict the probability
+ of a purchase for new customers based on their demographic and behavioral characteristics
+
+
+Define Null Hypothesis in Logistic Regression ?
+
+
+In logistic regression, the null hypothesis typically states that there is no significant relationship between the predictor variables and the binary outcome variable. Mathematically, this can be expressed as:
+H0: β1 = β2 = ... = βp = 0
+where β1, β2, ..., βp are the coefficients of the predictor variables in the logistic regression equation. The null hypothesis assumes that changes in the predictor variables do not have a significant impact on the probability of the binary outcome.
+To test the null hypothesis, we can use a likelihood ratio test or a Wald test to determine whether the model with the predictor variables is significantly better than a null model with no predictor variables. If the p-value of the test is less than
+ the significance level (usually 0.05), we can reject the null hypothesis and conclude that there is a significant relationship between at least one of the predictor variables and the binary outcome variable. If the p-value is greater than the significance level,
+ we fail to reject the null hypothesis and conclude that there is insufficient evidence to suggest a significant relationship.
+
+
+Is logistic regression for regression problems or classification problems?
+
+Logistic regression is a machine learning algorithm that is used to solve Classification problems. Whereas, Linear regression is a machine learning algorithm that is used to solve Regression problems.
+Logistic Regression is a classification technique used in machine learning. It uses a logistic function to model the dependent variable. The dependent variable is dichotomous in nature, i.e. there could only be two possible classes (eg.: either the cancer is malignant or not
+Logistic regression is a classification problem. The goal of logistic regression is to predict the probability of an observation belonging to a certain class or category based on a set of predictor variables. The output of logistic regression is a probability score between 0 and 1, 
+which represents the likelihood of the observation belonging to the positive class.

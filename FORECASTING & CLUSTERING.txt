@@ -1,0 +1,62 @@
+What is time-series data? Give example. 
+
+Time-series data is a type of data that is collected over time, with each data point recorded at a specific point in time or at a regular interval. This type of data is often used in various fields such as finance, economics, weather forecasting, and many more.
+For example, stock prices of a company over a year can be represented as a time-series data where the stock prices are recorded at regular intervals, such as daily or weekly, over the course of a year. Another example of time-series data could be the daily temperature
+ readings recorded in a particular city over the course of a year. Other examples could include monthly sales figures, hourly energy consumption data, or weekly website traffic data. In all these examples, the data is recorded over time and can be used to analyze trends, patterns, 
+and make forecasts.
+
+
+Define the problem in time series forecasting
+
+The problem in time series forecasting is to predict future values of a variable based on its historical values. Time series forecasting is used in many fields, such as finance, economics, meteorology, and manufacturing, to make predictions about future trends and patterns in the data.
+There are several challenges associated with time series forecasting that make it a complex problem. One of the primary challenges is dealing with the temporal dependencies in the data. The current value of a variable is often influenced by its past values, and the strength of this influence may change over time. 
+Therefore, it is important to take into account the temporal dependencies when making predictions.
+Another challenge is dealing with the noise in the data. Time series data is often subject to various sources of noise, such as measurement errors, outliers, and missing values. These can affect the accuracy of the predictions, and therefore, need to be properly accounted for in the forecasting models.
+Furthermore, time series forecasting often involves dealing with non-stationary data, where the statistical properties of the data change over time. This makes it difficult to develop models that can accurately capture the patterns and trends in the data.
+Overall, the problem in time series forecasting is to develop models that can effectively capture the temporal dependencies, account for the noise in the data, and adapt to the changing statistical properties of the data over time to make accurate predictions.
+
+
+
+
+
+What is clustering? 
+
+Clustering is a technique in machine learning and data analysis that involves grouping a set of objects in such a way that objects in the same group, called a cluster, are more similar to each other than to those in other clusters. The goal of clustering is to partition data into groups or clusters that are meaningful and useful for understanding the underlying structure of the data.
+Clustering can be used in many different applications, such as market segmentation, image segmentation, anomaly detection, and customer profiling. In market segmentation, for example, clustering can be used to group customers based on their preferences or behavior, allowing businesses to develop targeted marketing strategies.
+There are many different types of clustering algorithms, each with its own strengths and weaknesses. Some of the most commonly used clustering algorithms include k-means clustering, hierarchical clustering, and density-based clustering.
+K-means clustering is a popular algorithm that partitions the data into a fixed number of clusters, where each data point is assigned to the nearest centroid of a cluster. Hierarchical clustering, on the other hand, creates a hierarchy of clusters by recursively merging smaller clusters into larger ones. Density-based clustering, such as DBSCAN,
+groups together data points that are within a specified distance of each other, while outliers are left unclustered.
+Clustering is a powerful tool for exploring and analyzing data, and it can provide insights into the underlying structure and patterns in the data that may not be immediately apparent. However, it is important to carefully choose the appropriate clustering algorithm and parameters based on the specific characteristics of the data and the goals of the analysis.
+
+
+
+Write steps of K-means clustering algorithm?
+
+The K-means clustering algorithm is a popular unsupervised learning technique used for partitioning a given dataset into K clusters. The algorithm works by iteratively optimizing the distance between the data points and the centroids of the clusters. The following are the steps involved in the K-means clustering algorithm:
+
+*Initialization: The algorithm starts by selecting K initial centroids randomly from the dataset.
+
+*Assignment: Each data point is assigned to the nearest centroid based on the Euclidean distance between the data point and the centroid.
+
+*Recalculation: After all data points are assigned to their nearest centroids, the centroid of each cluster is recalculated as the mean of all the data points assigned to that cluster.
+
+*Reassignment: The algorithm repeats the assignment step, but this time using the updated centroids calculated in the previous step.
+
+*Termination: Steps 3 and 4 are repeated until the centroids no longer change significantly or a maximum number of iterations is reached.
+
+*Output: Once the algorithm has converged, the final set of K clusters and their centroids are obtained as the output.
+
+
+
+
+
+
+How to determine best value of k?  
+
+Determining the best value of k, the number of clusters, is an important step in the K-means clustering algorithm.
+ There are several techniques that can be used to determine the optimal value of k, including the following:
+	Domain knowledge: In some cases, the optimal value of k may be known based on prior knowledge of the problem domain. For example, in market segmentation, there may be a natural number of customer segments based on demographics or behavior.
+
+	Elbow method: The elbow method involves plotting the sum of squared distances between data points and their assigned centroids for different values of k. The optimal value of k is the point where the decrease in the sum of squared distances begins to level off, forming an elbow-like shape in the plot.
+
+

@@ -1,0 +1,64 @@
+Define Problem in decision tree algorithm?
+
+The problem in decision tree algorithm typically involves using a set of input features to predict the value of a target variable or outcome. Decision tree algorithm is a supervised learning algorithm that can be used for both classification and regression problems.
+For classification problems, the goal is to predict the categorical class or label of an observation based on a set of input features. For example, given a set of features such as age, income, and education level, the goal might be to predict whether a customer will buy a product or not.
+For regression problems, the goal is to predict a continuous numerical value for an observation based on a set of input features. For example, given a set of features such as temperature, humidity, and wind speed, the goal might be to predict the expected sales of ice cream for a particular day.
+The decision tree algorithm builds a tree-like model of decisions and their possible consequences. The tree consists of nodes that represent decisions based on the input features, and branches that represent the possible outcomes of each decision. The algorithm learns from the training data by
+ recursively splitting the data into smaller subsets based on the input features, until the subsets are as homogeneous as possible with respect to the target variable.
+The problem in decision tree algorithm is to build an accurate and interpretable model that can generalize well to new data. This involves selecting the best features to split on, determining the optimal depth of the tree, and pruning the tree to avoid overfitting. Decision tree algorithm can be sensitive
+ to the choice of hyperparameters and the quality of the training data, so careful tuning and preprocessing are often necessary to achieve good performance.
+
+
+STEPS:
+
+install.packages("rpart")
+install.packages("tree")
+> x=read.csv("D:/TYCS46/weather1.csv")
+>x
+#Create sample partition of the excel data	
+>sample_weather=sample(nrow(x),.7*nrow(x))
+
+#Create a weather partition for training
+weather_tr=x[sample_weather,]
+
+
+>library("rpart")
+>library(rattle) (if not installed install from toolbox use USA CA 1) 
+
+#Plot tree
+>dtreemod=rpart(playgolf~.,data=weather_tr,method="class",control=rpart.control(minsplit=1,minbucket=1))
+>fancyRpartPlot(dtreemod)
+
+
+#Predict Tree:
+>p=predict(dtreemod,weather_test,type="class")
+>weather_test
+
+
+#Regression Tree:
+>x=read.csv("D:/TYCS46/weather3.csv")
+>x
+> s=sample(nrow(x),.7*nrow(x))
+>weather_tr=x[s,]
+>weather_test=x[-s,]
+>dtreemod=rpart(Hours_played~.,data=weather_tr,method="anova",control=)
+
+>dtreemod=rpart(Hours_played~.,data=weather_tr,method="anova",control=rpart.control(minsplit=1,minbucket=1))
+>fancyRpartPlot(dtreemod)
+
+
+#Prediction:
+>actuals_preds<- data.frame(cbind(actuals=weather_test$Hours_played,predicts=p))
+Warning message:
+In cbind(actuals = weather_test$Hours_played, predicts = p) :
+number of rows of result is not a multiple of vector length (arg 1)
+>actuals_preds
+
+
+
+
+
+
+
+
+

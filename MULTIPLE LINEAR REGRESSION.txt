@@ -1,0 +1,14 @@
+define null hypothesis in Multiple  linear regression ?
+
+H0: β1 = β2 = ... = βp = 0
+where β1, β2, ..., βp are the slope coefficients of the regression equation. The null hypothesis assumes that there is no linear relationship between any of the predictor variables and the response variable, meaning that changes in any of the predictor variables do not have a significant impact on the value of the response variable.
+To test the null hypothesis, we can use an F-test to determine whether the overall regression model is significant. The F-test compares the variability explained by the regression model to the variability not explained by the model. If the p-value of the F-test is less than the significance level (usually 0.05), we can reject the null hypothesis
+and conclude that there is a significant linear relationship between at least one of the predictor variables and the response variable. If the p-value is greater than the significance level, we fail to reject the null hypothesis and conclude that there is insufficient evidence to suggest a significant linear relationship.
+
+
+define problem statement in multiple linear regression?
+
+In multiple linear regression, the problem statement typically involves identifying the linear relationship between a response variable (Y) and two or more predictor variables (X1, X2, ..., Xp). The goal is to build a model that can predict the value of Y based on the values of the predictor variables.
+For example, a problem statement for multiple linear regression might be: "Can we predict the sales of a product based on the advertising spend, price, and seasonality factors?"
+In this example, the response variable is sales, and the predictor variables are advertising spend, price, and seasonality factors (such as month or time of year). The goal of the analysis is to determine the relative importance of each predictor variable in predicting sales, and to build a model that can accurately predict sales based on these factors.
+To solve this problem, we would collect data on sales, advertising spend, price, and seasonality factors for a sample of products, and then use multiple linear regression to build a model that relates these variables to sales. The resulting model can then be used to predict the sales of new products based on their advertising spend, price, and seasonality factors.

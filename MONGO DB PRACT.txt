@@ -1,0 +1,33 @@
+Install MongoDB
+Run CMD as administrator
+Start MongoDB via cmd  ( net start MongoDB)
+Enter the MongoDB bin folder via the cmd ( go to bin folder and copy and paste the path "cd path location")
+after --->type  "mongo"
+Check Current Database
+---> db
+test
+ 
+Use database library
+---> use library
+switched to db library
+ 
+Create Collection(table) 
+---> db.createCollection ("book.info")
+
+Insert document (records) in collection
+---> db.book_info.insert ({title: 'program in java', status_info: {accession_no : BS0001, status : ISSUES},)
+ 
+To insert multiple records in one column 
+
+
+
+
+To view records of a specific document:
+--> db.book_info.find({ title : 'LET US C'})
+
+
+To view al records 
+--> db.book_info.find({})
+
+
+
